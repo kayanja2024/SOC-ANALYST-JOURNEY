@@ -1,4 +1,29 @@
+# Introduction to EDR
 
-I completed Introduction to EDR room on TryHackMe! i Learned the fundamentals of EDR and explore its features and its working.
-i have learned one of the essential tools used in the Security Operations Center (SOC), Endpoint Detection and Response (EDR). As a SOC analyst, i have now understood the basic architecture of EDR and its capabilities beyond Antivirus. i explored the detailed telemetry that an EDR provides. i also explored the powerful detection and response capabilities of EDR solutions. Lastly, i practiced investigating some detections on a simulated EDR.
-This sets a strong baseline for working with essential security solutions.
+Completed the Introduction to EDR room on TryHackMe.
+
+## Key Topics Covered
+
+* EDR fundamentals
+* SOC workflows
+* Endpoint telemetry
+* Threat detection
+* Incident response
+* Alert investigation
+
+## What I Learned
+
+This room introduced the core concepts of Endpoint Detection and Response (EDR) and how EDR solutions extend beyond traditional antivirus capabilities.
+
+I explored:
+
+* the basic architecture of EDR platforms
+* how endpoint telemetry is collected and analyzed
+* detection and response capabilities
+* investigation workflows used by SOC analysts
+
+The practical investigation exercises provided hands-on experience analyzing detections in a simulated EDR environment.
+
+## Takeaway
+
+This room helped strengthen my understanding of modern endpoint security monitoring and established a solid foundation for future SOC analyst training.
