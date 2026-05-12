@@ -1,1 +1,68 @@
-hi
+I successfully completed the Cyber Kill Chain room on TryHackMe, where I explored the stages of a cyber attack and learned how 
+security teams use the Cyber Kill Chain framework to detect, analyze, and prevent network intrusions.
+
+This room provided practical insight into how adversaries operate throughout the attack lifecycle and how defenders can identify 
+malicious activity at each stage before attackers achieve their objectives.
+
+## Overview
+
+The Cyber Kill Chain, developed by Lockheed Martin, is a cybersecurity framework used to understand and disrupt attacker operations by
+breaking down attacks into sequential phases.
+
+The module focused on understanding how attackers progress from initial reconnaissance to achieving their objectives, and how defenders 
+can implement detection and mitigation strategies throughout the intrusion lifecycle.
+
+## Topics Covered 
+
+  -Cyber Kill Chain framework fundamentals
+  -Attack lifecycle analysis
+  -Adversary tactics and intrusion methodology
+  -Threat detection and prevention strategies
+  -Network intrusion concepts
+  -Command and Control (C2) communications
+  -Malware delivery and exploitation techniques
+  -Defensive security monitoring concepts
+
+## Cyber Kill Chain Phases Studied
+
+  -Reconnaissance – Gathering information about the target
+  -Weaponization – Creating malicious payloads and attack tools
+  -Delivery – Transmitting malware to the target
+  -Exploitation – Triggering vulnerabilities for execution
+  -Installation – Establishing persistence on the victim system
+  -Command & Control (C2) – Maintaining communication with compromised systems
+  -Actions on Objectives – Achieving attacker goals such as data theft or system compromise
+
+## Techniques & Concepts Explored
+
+  -spearphishing attachment
+  -exploit public-facing application
+  -dynamic linker hijacking
+  -powershell execution techniques
+  -fallback channels for C2 communication
+  -data from local system collection techniques
+
+## Tools & Frameworks Used
+
+  -TryHackMe – Hands-on cybersecurity training platform
+  -Cyber Kill Chain Framework – Intrusion analysis methodology
+  -MITRE ATT&CK Concepts – Mapping attacker behavior and techniques
+  -Threat Intelligence & SOC Concepts
+  -Network Intrusion Detection Principles
+
+## Key Takeaways
+
+  -Understanding attacker behavior helps defenders detect threats earlier in the attack lifecycle.
+  -Interrupting attacks during early phases significantly reduces the impact of a compromise.
+  -Effective SOC operations rely on monitoring adversary techniques, persistence methods, and C2 behavior.
+  -Cybersecurity defense is more effective when focused on attacker methodology rather than isolated indicators.
+
+## Skills Gained
+
+  -Threat Intelligence Analysis
+  -Cyber Attack Lifecycle Understanding
+  -SOC Monitoring Fundamentals
+  -Intrusion Detection Concepts
+  -Adversary Behavior Analysis
+  -Security Framework Application
+  -Incident Response Awareness
