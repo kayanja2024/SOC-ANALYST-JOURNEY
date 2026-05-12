@@ -4,7 +4,8 @@ This module is a foundational cybersecurity concept in threat intelligence and S
 
 ## Overview
 
-  The Pyramid of Pain model illustrates the relationship between different types of security indicators and the “cost” to attackers when those indicators are detected and blocked. Lower-level indicators are easy for attackers to change, while higher-level behavioral indicators significantly increase the effort required to continue an attack campaign.
+  The Pyramid of Pain model illustrates the relationship between different types of security indicators and the “cost” to attackers when those indicators are detected and blocked. 
+  Lower-level indicators are easy for attackers to change, while higher-level behavioral indicators significantly increase the effort required to continue an attack campaign.
 
 ## Topics Covered
      -Cyber Threat Intelligence fundamentals
