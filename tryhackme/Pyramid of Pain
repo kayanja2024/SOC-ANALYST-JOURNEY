@@ -1,1 +1,46 @@
+I successfully completed the “Pyramid of Pain” room on TryHackMe, gaining a strong understanding of how Indicators of Compromise (IOCs) are categorized based on the level of difficulty they impose on adversaries when detected and mitigated.
 
+This module is a foundational cybersecurity concept in threat intelligence and SOC operations, helping security analysts prioritize detection strategies that maximize disruption to attacker activities.
+
+## Overview
+
+  The Pyramid of Pain model illustrates the relationship between different types of security indicators and the “cost” to attackers when those indicators are detected and blocked. Lower-level indicators are easy for attackers to change, while higher-level behavioral indicators significantly increase the effort required to continue an attack campaign.
+
+## Topics Covered
+     -Cyber Threat Intelligence fundamentals
+     -Pyramid of Pain framework
+     -Indicators of Compromise (IOCs) classification
+     -Adversary behavior analysis
+     -Attack lifecycle understanding
+     -Threat hunting concepts
+    -SOC detection prioritization strategies
+    -Mapping attacker behavior vs artifacts
+
+## Indicators Studied
+    -Hash Values (MD5, SHA-1, SHA-256) – File identification signatures
+    -IP Addresses – Attack infrastructure tracking
+    -Domain Names – Phishing and typosquatting infrastructure
+    -Network Artifacts – C2 traffic patterns, beaconing behavior
+    -Tools – Malware and attacker utilities
+    -Tactics, Techniques, and Procedures (TTPs) – High-level adversary behavior patterns
+
+## Tools & Technologies Used
+     -TryHackMe Platform – Hands-on cybersecurity learning environment
+     -MITRE ATT&CK Framework – Mapping attacker TTPs and behaviors
+     -Threat Intelligence Concepts & IOC Analysis Tools (theoretical application)
+     -Web-based Security Analysis Simulations
+     -Cybersecurity Visualization Models (Pyramid of Pain)
+
+## Key Takeaways
+     -Lower-level indicators (hashes, IPs, domains) are easy to replace and offer short-term detection value.
+     -Higher-level indicators (tools and TTPs) provide stronger defensive value by forcing attackers to change their behavior.
+     -Effective SOC operations should prioritize behavioral detection and threat hunting over static indicators alone.
+     -Understanding attacker adaptability is key to building resilient cybersecurity defenses.
+
+## Skills Gained
+    -Threat Intelligence Analysis
+    -SOC Operations Fundamentals
+    -Adversary Behavior Profiling
+    -Cybersecurity Detection Strategy
+    -IOC Mapping & Classification
+    -Security Framework Application (MITRE ATT&CK / Pyramid of Pain)
