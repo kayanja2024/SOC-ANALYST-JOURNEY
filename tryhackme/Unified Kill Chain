@@ -1,1 +1,198 @@
-hi
+I Successfully completed the Unified Kill Chain room on TryHackMe, gaining practical knowledge of cyber attack lifecycles,
+threat analysis, adversary behavior, and defensive security operations.
+
+The Unified Kill Chain framework combines traditional cyber kill chain methodologies with modern adversary-focused attack models to 
+help security professionals better understand, detect, and mitigate sophisticated cyber threats.
+
+## Topics Covered
+
+1. Cyber Kill Chain Fundamentals
+  -Understanding cyber attack lifecycles
+  -Threat actor methodologies
+  -Attack surface identification
+  -Enterprise security risks
+
+2. Adversary Tactics and Techniques
+
+  -Reconnaissance techniques
+  -Initial compromise methods
+  -Persistence mechanisms
+  -Privilege escalation
+  -Lateral movement
+  -Defense evasion
+  -Credential access
+
+3. Threat Detection and Incident Response
+
+  -Indicators of Compromise (IOCs)
+  -Indicators of Attack (IOAs)
+  -Security monitoring
+  -Log analysis
+  -Network traffic inspection
+  -Threat hunting concepts
+
+4. Malware and Command & Control (C2)
+
+  -Malware delivery techniques
+  -Beaconing activity
+  -Remote access tools
+  -C2 communication channels
+  -Data exfiltration techniques
+
+5. Defensive Security Operations
+
+  -Risk mitigation strategies
+  -Security hardening
+  -Detection engineering
+  -Security operations center (SOC) workflows
+  -Incident containment and remediation
+
+## Unified Kill Chain Phases Learned
+    1. Reconnaissance
+
+#Attackers gather information about:
+
+  -Targets
+  -Systems
+  -Employees
+  -Network infrastructure
+
+#Techniques:
+  -OSINT
+  -DNS enumeration
+  -Social engineering
+  -Network scanning
+#Tools:
+Nmap
+Whois
+Shodan
+Maltego
+
+2. Weaponization
+
+Creation or preparation of malicious payloads.
+
+#Activities:
+  -Malware creation
+  -Exploit preparation
+  -Phishing payload generation
+
+#Tools:
+  -Metasploit
+  -Msfvenom
+  -Cobalt Strike
+
+3. Delivery
+
+Attackers deliver malicious payloads to victims.
+
+#Methods:
+  -Phishing emails
+  -Malicious links
+  -Infected attachments
+  -Drive-by downloads
+#Tools:
+  -SET Toolkit
+  -Email spoofing platforms
+
+4. Exploitation
+
+Attackers exploit vulnerabilities to gain access.
+
+Examples:
+  -CVE exploitation
+  -Remote code execution
+  -Authentication bypass
+#Tools:
+  -Metasploit Framework
+  -Burp Suite
+  -Exploit-DB
+
+5. Installation
+
+Installing malware or persistence mechanisms.
+
+#Activities:
+
+  -Trojan installation
+  -Backdoor deployment
+  -Persistence creation
+
+#Tools:
+  -PowerShell
+  -Scheduled Tasks
+  -Registry modifications
+
+6. Command and Control (C2)
+
+Attackers establish communication with compromised systems.
+
+#Techniques:
+  -HTTP/HTTPS beaconing
+  -DNS tunneling
+  -Reverse shells
+#Tools:
+  -Cobalt Strike
+  -Netcat
+  -Empire Framework
+
+7. Lateral Movement
+
+Moving across systems within the network.
+
+#Activities:
+  -Credential reuse
+  -Remote execution
+  -SMB exploitation
+#Tools:
+  -PsExec
+  -Mimikatz
+  -RDP
+
+8. Actions on Objectives
+
+Final attacker objectives.
+
+#Objectives:
+  -Data exfiltration
+  -Ransomware deployment
+  -System destruction
+  -Espionage
+
+#Tools:
+  -FTP
+  -PowerShell
+  -Cloud storage abuse
+
+## Security Skills Developed
+
+  -Threat intelligence analysis
+  -Cyber attack lifecycle mapping
+  -Network traffic analysis
+  -IOC identification
+  -Malware behavior understanding
+  -Defensive security monitoring
+  -Incident response fundamentals
+  -Threat hunting methodologies
+  -Security risk assessment
+
+## Cybersecurity Tools Explored
+Wireshark
+Nmap
+Metasploit
+Burp Suite
+PowerShell
+
+## Key Takeaways
+
+This room strengthened my understanding of:
+
+  -How modern cyber attacks are conducted
+  -How attackers maintain persistence
+  -How defenders can identify malicious activity early
+  -How organizations can improve cyber resilience using layered security approaches
+
+The Unified Kill Chain framework provides valuable insight into both offensive and defensive cybersecurity operations and reinforces 
+the importance of proactive threat detection and mitigation.
+
+#CyberSecurity #TryHackMe #UnifiedKillChain #ThreatHunting #SOC #BlueTeam #IncidentResponse #InformationSecurity #MalwareAnalysis #EthicalHacking #DigitalForensics #NetworkSecurity #CyberDefense
