@@ -1,1 +1,30 @@
+I successfully completed the Phishing Analysis Fundamentals room on TryHackMe, focusing on understanding email structures and
+identifying phishing indicators through practical email forensics.
 
+## Topics Learned
+  #Email structure and components (headers, body, metadata)
+  #Email routing and delivery process using Received headers
+  #Email authentication mechanisms:
+  #SPF (Sender Policy Framework)
+  #DKIM (DomainKeys Identified Mail)
+  #DMARC (Domain-based Message Authentication, Reporting & Conformance)
+  #Identifying X-Originating-IP and tracing message origin
+  #Understanding Return-Path and Reply-To manipulation techniques
+  #Recognizing phishing indicators in email content and headers
+  #Understanding spam and phishing delivery techniques
+
+##Techniques Used
+  #Email header analysis and deep inspection
+  #IP extraction and defanging for safe reporting
+  #Header tracing to identify sender infrastructure
+  #Verification of authentication results (SPF, DKIM, DMARC)
+  #Cross-checking sender domain legitimacy
+  #Identifying suspicious links, redirects, and unsubscribe traps
+  #Email source code inspection (raw MIME analysis)
+  #Threat indicator identification and classification
+
+##Outcome
+
+This exercise strengthened my ability to perform email forensics and phishing analysis, improving my skills in identifying malicious
+emails, tracing their origin, and validating email authenticity. These are essential competencies for cybersecurity incident response 
+and threat detection roles.
