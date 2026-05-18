@@ -1,0 +1,24 @@
+I just completed the Phishing Emails in Action room on TryHackMe, where I gained hands-on experience analyzing real-world phishing emails 
+and identifying common social engineering tactics used by attackers.
+
+##Topics Learned
+  -Phishing email analysis
+  -Email spoofing and sender impersonation
+  -Credential harvesting techniques
+  -Social engineering indicators
+  -Malicious attachments and embedded links
+  -Brand impersonation attacks
+  -Suspicious domains and URLs
+  -Email header investigation
+  -Identifying urgency and psychological manipulation tactics
+
+##Techniques & Skills Practiced
+  -Analyzing phishing email structures and content
+  -Detecting spoofed sender addresses and fake display names
+  -Investigating malicious PDF attachments and embedded URLs
+  -Identifying red flags such as grammar inconsistencies, domain mismatches, and deceptive formatting
+  -Recognizing credential theft campaigns targeting users through fake login portals
+  -Performing basic phishing triage and threat identification
+
+This room strengthened my practical understanding of how phishing campaigns operate and improved my ability to detect, analyze, and 
+respond to email-based cyber threats in real-world environments.
