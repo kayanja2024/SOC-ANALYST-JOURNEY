@@ -1,0 +1,31 @@
+## Network Traffic Analysis – TryHackMe
+
+I successfully completed the Network Traffic Basics room on TryHackMe, where I gained foundational skills in understanding and analyzing 
+network communications.
+
+## Topics Covered
+
+  -Fundamentals of network traffic analysis
+  -Importance of network monitoring in cybersecurity
+  -Structure of network packets (MAC, IP, TCP/UDP, application layers)
+  -DNS, HTTP, and common protocol behaviors
+  -Identifying suspicious or malicious traffic patterns
+
+## Tools Practiced
+
+  -Wireshark for packet capture and inspection
+  -Network taps and SPAN/mirror ports for traffic collection
+  -Basic Linux networking utilities for traffic observation
+
+## Techniques Learned
+
+  -Capturing and filtering network traffic efficiently
+  -Inspecting packet structure across multiple OSI layers
+  -Following TCP/UDP streams to reconstruct communication flows
+  -Identifying key indicators within DNS and HTTP traffic
+  -Extracting meaningful insights from raw packet data
+
+## Key Takeaway
+
+This lab strengthened my understanding of how network communication works at a packet level and how attackers can be detected through 
+careful traffic analysis.
