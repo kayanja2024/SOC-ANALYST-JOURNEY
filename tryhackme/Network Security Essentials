@@ -1,0 +1,28 @@
+I Completed the Network Security Essentials room on TryHackMe, focusing on foundational network security principles and defensive monitoring 
+techniques.
+
+##Topics covered:
+
+  -Network security fundamentals
+  -Network traffic analysis
+  -Intrusion concepts (IDS, IPS AND Firewalls), 
+  -Firewall operations and rule enforcement
+  -Secure network architecture design
+  -Common network-based attack patterns and indicators of compromise (IoCs)
+  -Network Perimeter Protection 
+
+##Tools & technologies used:
+
+  -Wireshark for packet inspection and traffic analysis
+  -Network log analysis systems
+  -Firewall configuration concepts
+  -Intrusion Detection System (IDS) principles and alert interpretation
+
+##Techniques applied:
+  -Packet capture and protocol-level inspection
+  -Identification of anomalous traffic patterns
+  -Log correlation and analysis for threat detection
+  -Detection of suspicious network behavior using IoCs
+  -Basic network defense and monitoring strategies
+
+The ROOM Strengthened my practical understanding of how to monitor, detect, and respond to security threats within enterprise network environments.
