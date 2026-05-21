@@ -1,0 +1,41 @@
+I Completed the **Network Discovery Detection** room on TryHackMe
+
+This hands-on lab focused on understanding how attackers perform network reconnaissance and how defenders can identify and investigate 
+discovery activity using network telemetry and log analysis.
+
+## Topics Covered
+
+* Network discovery fundamentals
+* External vs internal scanning and their security impact
+* Host discovery and ping sweeps
+* Port scanning techniques
+* Horizontal vs vertical scanning
+* TCP SYN scans and scan-state analysis
+* Understanding network reconnaissance behavior
+* Detection of malicious scanning activity
+* Traffic analysis using Zeek connection logs
+* Interpreting `zeek.conn.conn_state` values
+
+## Tools & Technologies Used
+
+* Kibana
+* Elasticsearch
+* Zeek
+* Linux command-line utilities
+* AWK for log parsing and filtering
+
+## Techniques Practiced
+
+* Log analysis and threat hunting
+* Identifying external reconnaissance activity
+* Detecting internal scanning behavior
+* Analyzing TCP connection states AND UDP Scan
+* Investigating subnet-wide ping sweeps
+* Correlating source and destination IP activity
+* Identifying scan patterns across multiple ports and hosts
+
+This room strengthened my practical understanding of network reconnaissance detection and improved my ability to analyze real-world 
+scanning activity using SIEM and network security monitoring tools.
+
+#CyberSecurity #NetworkSecurity #ThreatHunting #SOCAnalyst #BlueTeam #TryHackMe #Zeek #Kibana #ElasticStack #SecurityMonitoring 
+#LogAnalysis #ThreatDetection
