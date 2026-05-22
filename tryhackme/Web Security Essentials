@@ -1,0 +1,62 @@
+##Web Security Essentials — TryHackMe
+
+I Completed the TryHackMe Web Security Essentials room, where I explored the foundations of web application security, common attack 
+surfaces, and modern defensive technologies used to secure web environments.
+
+##Overview
+
+This room introduced the core concepts of how web applications function and why they are prime targets for attackers.
+I learned how web requests and servers communicate, how attackers exploit vulnerabilities, and how defenders use layered security 
+controls to protect applications and users.
+
+##Topics Covered
+
+  -Fundamentals of Web Applications
+  -Client–Server Architecture
+  -HTTP/HTTPS Communication
+  -Common Web Security Risks
+  -Web Servers & Requests
+  -Web Application Firewalls (WAFs)
+  -Content Delivery Networks (CDNs)
+  -Antivirus & Endpoint Protection
+  -DDoS Mitigation
+  -IP Masking & Traffic Filtering
+  -Security Monitoring & Threat Detection
+  -Defense-in-Depth Strategies
+
+##Tools & Technologies
+
+  -Cloudflare CDN & WAF
+  -Amazon Web Services CloudFront
+  -Microsoft Azure Front Door
+  -Web Application Firewalls (WAF)
+  -Content Delivery Networks (CDN)
+  -HTTPS/TLS Encryption
+  -Antivirus (AV) Solutions
+
+##Techniques Learned
+
+  -Identifying common web attack patterns
+  -Understanding request inspection and filtering
+  -Signature-based threat detection
+  -Heuristic and behavioral analysis
+  -IP reputation filtering
+  -Traffic mitigation techniques
+  -Secure web architecture principles
+  -Implementing layered web defenses
+
+##Key Takeaways
+
+  -Web applications are major attack targets because they often store sensitive data and connect to internal systems.
+  -CDNs improve both performance and security by caching content and masking origin servers.
+  -WAFs help detect and block malicious HTTP requests before they reach the application.
+  -Effective cybersecurity relies on multiple layers of defense working together.
+
+##Skills Gained
+
+  -Web Security Fundamentals
+  -Threat Detection Awareness
+  -Security Infrastructure Understanding
+  -Traffic Analysis Basics
+  -Application Defense Concepts
+  -Defensive Security Practices
