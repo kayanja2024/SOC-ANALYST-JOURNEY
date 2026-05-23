@@ -1,0 +1,69 @@
+## Detecting Web Attacks – TryHackMe Lab
+## Overview
+
+This project is based on the “Detecting Web Attacks” room on TryHackMe.
+It focuses on identifying and analyzing web-based attacks using log analysis, network traffic inspection, and Web Application Firewall 
+(WAF) concepts.
+
+The objective was to understand how attackers exploit web applications and how defenders can detect and mitigate these threats using 
+multiple data sources.
+
+## Objectives
+
+  -Understand common client-side and server-side web attacks
+  -Analyze web server logs to identify suspicious behavior
+  -Inspect network traffic (HTTP requests) for attack patterns
+  -Learn how WAFs detect and block malicious requests
+  -Correlate multiple data sources to improve detection accuracy
+
+## Topics Covered
+
+  -Web Application Security Fundamentals
+  -Client-side vs Server-side Attacks
+  -SQL Injection detection patterns
+  -Log Analysis techniques
+  -Network Traffic Analysis (HTTP requests)
+  -Indicators of Compromise (IOCs)
+  -Web Application Firewalls (WAFs)
+  -Security rule-based detection
+  -Attack correlation techniques
+
+## Tools Used
+
+  -TryHackMe Lab Environment
+  -Wireshark (network traffic analysis)
+  -Web server logs (Apache/HTTP logs)
+  -Browser Developer Tools
+  -Security concepts aligned with OWASP methodology
+
+## Techniques Applied
+
+  -Filtering and analyzing HTTP request patterns
+  -Identifying malicious User-Agent strings (e.g., automated tools like sqlmap)
+  -Detecting SQL Injection payloads in URLs and parameters
+  -Log correlation to trace attacker behavior
+  -Traffic inspection to identify suspicious request repetition
+  -Understanding WAF rule logic and defensive filtering strategies
+
+## Key Learnings
+
+  -Attack detection requires correlation between logs and network traffic, not isolated analysis
+  -SQL Injection and automated scanning tools leave identifiable patterns in web requests
+  -WAFs act as a first layer of defense by filtering and blocking malicious traffic
+  -Effective security analysis involves understanding both attack techniques and defensive mechanisms
+  -Security analysts must think in terms of attack chains, not single events
+
+## Outcome
+
+This lab strengthened my practical understanding of:
+
+  -Web attack detection
+  -Traffic and log analysis
+  -Defensive security mechanisms (WAFs)
+  -SOC-style investigative thinking
+
+It provided a strong foundation for real-world blue team and security operations work.
+
+## Notes
+
+This project is part of my continuous learning journey in Cybersecurity (SOC & Blue Team focus) through TryHackMe hands-on labs.
