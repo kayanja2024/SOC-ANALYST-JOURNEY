@@ -1,0 +1,52 @@
+## Windows Logging for SOC Analysis (TryHackMe Completion)
+
+I successfully completed the Windows Logging for SOC room on TryHackMe, gaining hands-on experience in analyzing Windows event logs and
+Sysmon telemetry to detect and investigate security incidents across different stages of the Cyber Kill Chain.
+
+This exercise focused on strengthening practical SOC (Security Operations Center) skills in endpoint monitoring, log correlation, and 
+attack chain reconstruction using native Windows logging mechanisms and Sysmon.
+
+## Key Learning Outcomes
+
+  #Interpreted critical Windows Security Event IDs such as:
+    -4624 – Successful logon events
+    -4625 – Failed logon attempts
+  #Correlated logs using Logon ID and Process ID to reconstruct attack timelines and identify malicious behavior.
+  #Analyzed Sysmon Event ID 1 (Process Creation) to gain deeper visibility into:
+    -Process execution paths
+    -Parent-child process relationships
+    -File hashes and binary metadata
+  #Identified suspicious activity by detecting anomalies such as:
+    -Execution from unusual directories (e.g., Downloads, Temp, Public folders)
+    -Unsigned or randomly named executables
+    -Unexpected network connections and DNS queries
+
+## Tools & Technologies Used
+
+  -Windows Event Viewer (Security Logs)
+  -Sysmon (System Monitor – Sysinternals)
+  -TryHackMe SIEM Simulation Environment
+  -Process Explorer (conceptual usage for process tree analysis)
+  -PowerShell Logging (event-based monitoring awareness)
+
+## Techniques Practiced
+
+  -Event log correlation across multiple data sources
+  -Attack chain reconstruction using Process ID and Logon ID mapping
+  -DNS and network traffic analysis for malicious domain detection
+  -File creation and download tracing using Sysmon metadata
+  -Malware behavior identification through process execution patterns
+  -Endpoint telemetry analysis aligned with Cyber Kill Chain stages
+
+## Key Takeaways
+
+  -Windows Security logs (4624/4625) are essential for authentication tracking in SOC environments
+  -Sysmon significantly enhances visibility beyond default Windows logging
+  -Grouping logs by Logon ID and Process ID is critical for reconstructing attack timelines
+  -PowerShell and process-level logging are increasingly important due to modern attacker techniques
+  -Effective SOC analysis requires correlating multiple log sources rather than relying on a single event type
+
+## Outcome
+
+This training strengthened my ability to investigate real-world security incidents by correlating Windows logs, identifying malicious
+behavior patterns, and tracing attacker actions across system events.
