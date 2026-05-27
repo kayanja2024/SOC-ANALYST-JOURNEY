@@ -1,0 +1,70 @@
+# Windows Threat Detection: Initial Access & Sysmon Analysis
+
+##  Project Overview
+This repository contains my write-up, technical analysis, and indicators of compromise (IOCs) compiled while completing the
+**Windows Threat Detection 1** room on TryHackMe. The core objective of this project was to analyze how attackers gain entry into
+Windows environments via common initial access vectors and learn how to hunt for them using advanced logging frameworks.
+
+##  Core Tools & Technologies
+*   **Log Management:** Windows Event Viewer, Sysmon (System Monitor)
+*   **Analysis Tools:** Command Line Utilities (`strings`, `grep`, `unzip`), Windows GUI Properties
+*   **Environments:** Windows Forensic Workstations, Linux Security VMs (AttackBox)
+
+---
+
+##  Analytical Breakdown: Phishing Cases & Remediation
+
+###  Phishing Case 1 & 2: Malicious Shortcut (.LNK) Analysis
+*   **The Vector:** User-driven attack leveraging email attachments inside compressed archives (`.zip`).
+*   **The Technique:** Attackers utilize double-extension files and hidden payload execution embedded within standard `.lnk` file targets
+to bypass user suspicion.
+*   **Key Discoveries:**
+    *   **Extraction Method:** Overcoming ZIP-compression blocks to access native properties.
+    *   **Malicious Target URL:** `http://hqywlqpa.thm`
+    *   **Dropped Payload:** `best-cat.jpg.exe` (A double-extension masquerade bypassing default Windows extension visibility).
+
+###  Phishing Case 3: Execution Triage
+*   **Initial Download:** The victim downloaded `top-cats.zip` via a web browser (`msedge.exe` / `chrome.exe`).
+*   **Staging Ground:** The file was unarchived into the `C:\Users\Administrator\Pictures` folder.
+*   **Malware Invocation:** 
+    *   **Malicious File:** `best-cat.jpg.exe`
+    *   **Process ID (PID) Tracked:** `5340`
+*   **Detection Strategy:** Monitored via **Sysmon Event ID 11 (File Creation)** to track the precise instant the browser dropped the 
+archive and when the unzipping utility extracted the payload.
+
+###  USB Worm Propagation Case
+*   **The Vector:** Exposed physical media / Removable hardware infection.
+*   **Execution Trigger:** The user launched `E:\Open Sandisk 4GB USB.exe` disguised as a root drive folder.
+*   **Local Staging:** The malware dropped a secondary, hidden persistence executable to `C:\Users\Public\Documents\winupdate.exe`.
+*   **Propagation Behavior:** System logs proved the malware monitored the host for secondary media connections, successfully 
+propagating and copying itself directly to the drive root of **`F:`**.
+*   **Detection Strategy:** Monitored via **Sysmon Event ID 1 (Process Creation)** to pinpoint the execution origin on the external 
+drive letter (`E:`), combined with Event ID 11 to watch cross-drive file copying.
+
+---
+
+##  Key Takeaways & Detection Framework
+
+Through hands-on triage, I mastered the methodology required to detect initial access attacks at their earliest stages:
+
+1.  **Exposed Services vs. User-Driven Attacks:** Learned to differentiate detection techniques between brute-forcing 
+vectors (e.g., tracking RDP via **Security Event IDs 4624/4625**) versus client-side exploitation.
+2.  **Process-Level Visibility:** Proven that user-driven attacks are best defended against using Sysmon's process and 
+network tracking features.
+3.  **My Sysmon Detection Playbook:**
+    *   **Event ID 1 (Process Creation):** Tracks what ran, who ran it, the Parent PID, and command-line arguments.
+    *   **Event ID 11 (File Creation):** Essential for identifying where downloads land (`\Downloads`) and where payloads extract (`\Pictures`, `\Public`).
+    *   **Event ID 22 (DNS Queries) / Event ID 3 (Network Connection):** Links a specific malicious PID to an external command-and-control (C2) domain.
+
+---
+
+##  How to Use this Knowledge for Alert Triage
+When responding to potential phishing or removable media alerts, my triage checklist based on this lab is:
+1. Identify the parent process (Is Explorer or a browser spawning an executable?).
+2. Trace the file timeline back to its creation context (Did a `.zip` file precede it?).
+3. Check target paths for common evasion directories like `C:\Users\Public\`.
+
+***
+
+*Disclaimer: All analyses were performed inside a controlled, isolated sandbox environment provided by TryHackMe for educational and
+defensive purposes.*
