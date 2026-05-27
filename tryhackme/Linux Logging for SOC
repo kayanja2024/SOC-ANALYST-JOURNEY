@@ -1,0 +1,75 @@
+# Linux Logging for SOC: Incident Triage & Runtime Telemetry
+
+##  Project Overview
+This repository contains my write-up, technical analysis, and investigative workflows compiled while completing the **Linux Logging 
+for SOC** room on TryHackMe. The core objective of this project was to master the navigation of chaotic Linux logging structures,
+isolate security incidents out of noisy plain-text files, and reconstruct adversary footprints using advanced runtime auditing frameworks
+(`auditd`).
+
+##  Core Tools & Technologies
+*   **Log Frameworks:** Linux Syslog (`/var/log/syslog`), Authentication Logs (`/var/log/auth.log`), Package Management
+Logs (`/var/log/dpkg.log`)
+*   **Auditing Frameworks:** Linux Audit Daemon (`auditd`), Runtime Telemetry Parser (`ausearch`)
+*   **Analysis Tools:** Command-Line Utilities (`grep`, `cat`, `pipes`, `strings`)
+
+---
+
+##  Analytical Breakdown: Threat Hunting & Log Triage
+
+###  1. System & Authentication Logs Triage
+*   **Time Synchronization Tracking:** Isolated core network telemetry showing system clock management connecting to `://ubuntu.com` 
+via `systemd-timesyncd`.
+*   **Kernel Hardening Validation:** Verified Linux Security Module (LSM) initialization by tracking the kernel boot string 
+`Yama: becoming mindful`, ensuring process-debugging restrictions were active.
+*   **Brute-Force SSH Detection:** Identified a persistent brute-force attempt targeting multiple system users 
+(such as `root`, `admin`, and `support`) originating entirely from the external IP address `10.14.94.82`.
+*   **Privilege Escalation Detection:** Discovered an illicit persistence attempt where an unauthorized user account named
+`xerxes` was injected and escalated directly into the privileged `sudo` group via `usermod`.
+
+###  2. Application & Command History Forensics
+*   **Package Management Auditing:** Audited `/var/log/dpkg.log` to confirm the installation footprint of a utility tool, 
+explicitly verifying the exact version string `6.0-28ubuntu4.1` for `unzip`.
+*   **The Unreliability of Bash History:** Validated that while a flag (`THM{note_to_remember}`) was recovered 
+from `/root/.bash_history`, relying on standard user history files is fundamentally flawed for real-world SOC operations because 
+attackers can easily clear, disable, or modify their `.bash_history` files.
+
+###  3. Advanced Runtime Monitoring (`auditd`)
+*   **System Call Telemetry:** Focused on monitoring `execve` system calls to trap process creation activity at the kernel level, 
+completely bypassing shell histories.
+*   **Unauthorized File Access:** Tracked the exact timestamp (`08/13/25 18:36:54`) a protected file was viewed by executing a search 
+using the custom audit key `file_thmsecret`.
+*   **Reconstructing Attack Scope (Port Scanning):**
+    *   Detected an adversarial tool drop where `wget` downloaded an external binary to a volatile directory (`/tmp/naabu.zip`) under 
+the audit key `proc_wget`.
+    *   Reconstructed the complete network reconnaissance footprint by running `ausearch -i | grep naabu`.
+    *   Extracted the exact `PROCTITLE` arguments to prove the adversary launched a port scan targeting the specific subnetwork internal 
+scope of **`192.168.50.0/24`**.
+
+---
+
+##  Key Takeaways & SOC Playbook
+
+Through hands-on triage of a compromised Linux server, I synthesized the following core concepts for defensive operations:
+
+1.  **The Core Triad of Linux Logging:**
+    *   **Identity & Access (`auth.log`):** Essential for capturing brute-force attacks, root escalation, and unauthorized user creation.
+    *   **App-Specific / Package Logs (`dpkg.log`, `syslog`):** Tracks the introduction of potentially unwanted tools (PUTs) or changes to
+configurations.
+    *   **Runtime Telemetry (`auditd`):** The definitive source of truth. It logs raw kernel system calls (`execve`) that an adversary 
+cannot easily wipe or falsify.
+2.  **Scoping Incidents Fast:** Process telemetry acts as the primary driver for incident containment. Identifying the scanned network 
+range (`192.168.50.0/24`) instantly allowed me to narrow down downstream targets, saving invaluable mitigation time during triage.
+
+---
+
+##  Blue Team Triage Checklist for Linux Hosts
+When responding to a potential Linux host compromise, my operational workflow is:
+1. Check `/var/log/auth.log` for anomalous root actions or unfamiliar accounts using `sudo`.
+2. Pivot directly to `auditd` using `ausearch -i` to bypass volatile or missing shell histories.
+3. Isolate file creation (`/tmp/`, `/dev/shm/`) and execution telemetry to determine what binaries were dropped and what arguments they
+executed.
+
+***
+
+*Disclaimer: All forensic analyses were performed inside a controlled, isolated sandbox environment provided by TryHackMe for educational
+and defensive purposes.*
