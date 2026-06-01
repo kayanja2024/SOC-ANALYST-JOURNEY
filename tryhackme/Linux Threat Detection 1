@@ -1,0 +1,71 @@
+# Linux Threat Detection 1 — TryHackMe
+
+## Overview
+
+I Completed the **Linux Threat Detection 1** room on TryHackMe, focusing on identifying and analyzing Initial Access techniques used 
+against Linux systems. This lab emphasized practical threat detection, log analysis, and process tree investigation to uncover malicious 
+activity on Linux environments.
+
+## Skills & Knowledge Gained
+
+* Linux Threat Detection
+* Initial Access Analysis
+* Process Tree Analysis
+* SSH Attack Detection
+* Log Analysis & Monitoring
+* Security Event Investigation
+* Linux System Auditing
+* Threat Hunting Fundamentals
+* Supply Chain Compromise Detection
+
+## Topics Covered
+
+### Initial Access Techniques
+
+* SSH brute-force and credential attacks
+* Exploitation of exposed services
+* Human-led attacks
+* Supply chain compromise scenarios
+
+### Detection & Investigation
+
+* Authentication log analysis
+* Suspicious command monitoring
+* Process tree analysis
+* Identifying malicious parent-child process relationships
+* Detecting unauthorized downloads and malware execution
+
+## Tools & Technologies Used
+
+* Linux
+* auditd
+* System Logs (`auth.log`, `syslog`)
+* Bash
+* SSH
+* Process Tree Analysis Techniques
+* TryHackMe Cybersecurity Labs
+
+## Key Takeaways
+
+* SSH attacks are common but detectable through authentication logs.
+* Exposed services can lead to complete Linux compromise.
+* Human error and supply chain attacks remain critical risks in Linux environments.
+* Process tree analysis is highly effective for tracing Initial Access activity and identifying malicious behavior.
+
+## Practical Detection Examples
+
+* `PHP -> whoami` → Potential web exploitation
+* `Service -> wget` → Possible supply chain compromise
+* `sshd -> bash -> xmrig` → Indicators of SSH compromise and crypto mining malware
+
+## Outcome
+
+This room strengthened my ability to investigate Linux-based security incidents, analyze system logs, and identify attacker behavior 
+through process relationships and auditing techniques.
+
+## Platform
+
+Completed on TryHackMe.
+Completed the Linux Threat Detection 1 room on TryHackMe, where I explored Linux Initial Access techniques, SSH attack detection, 
+exposed service risks, supply chain compromise scenarios, and process tree analysis. Gained hands-on experience using Linux logs and 
+auditd to investigate malicious activity and trace attacker behavior.
