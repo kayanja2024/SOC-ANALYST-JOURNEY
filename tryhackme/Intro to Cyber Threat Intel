@@ -1,0 +1,99 @@
+#  TryHackMe – Introduction to Cyber Threat Intelligence
+
+##  Overview
+
+I successfully completed the **Introduction to Cyber Threat Intelligence** room on TryHackMe, where I gained foundational knowledge of
+Cyber Threat Intelligence (CTI) and its critical role in modern cybersecurity operations.
+
+This room introduced the core principles of collecting, analyzing, and leveraging threat intelligence to identify emerging threats, 
+strengthen organizational defenses, and support proactive security decision-making. Through practical examples, I explored how threat 
+intelligence supports Security Operations Centers (SOCs), incident response teams, and threat hunting activities.
+
+
+##  Key Learning Outcomes
+
+* Developed a solid understanding of Cyber Threat Intelligence (CTI) concepts and methodologies.
+* Learned the different types of threat intelligence and their applications within cybersecurity operations.
+* Explored industry-recognized frameworks and standards used for threat intelligence sharing and analysis.
+* Understood how intelligence-driven security improves threat detection, prevention, and incident response.
+* Gained insight into the intelligence lifecycle and the processes used to transform raw data into actionable intelligence.
+
+##  Topics Covered
+
+### Cyber Threat Intelligence Fundamentals
+
+* Definition and purpose of Cyber Threat Intelligence
+* Intelligence-driven defense strategies
+* The role of CTI within cybersecurity programs
+
+### Types of Threat Intelligence
+
+* Strategic Intelligence
+* Operational Intelligence
+* Tactical Intelligence
+* Technical Intelligence
+
+### Threat Intelligence Lifecycle
+
+* Direction
+* Collection
+* Processing
+* Analysis
+* Dissemination
+* Feedback
+
+### Threat Intelligence Standards & Frameworks
+
+* MITRE ATT&CK Framework
+* STIX (Structured Threat Information Expression)
+* TAXII (Trusted Automated Exchange of Intelligence Information)
+* Indicators of Compromise (IOCs)
+* Threat Actors, Tactics, Techniques, and Procedures (TTPs)
+
+### Threat Intelligence Applications
+
+* Threat Hunting
+* Incident Response
+* Security Monitoring
+* Vulnerability Management
+* Risk Assessment
+
+
+##  Tools & Platforms Explored
+
+* TryHackMe Cyber Threat Intelligence Lab
+* MITRE ATT&CK Framework
+* STIX Threat Intelligence Standard
+* TAXII Intelligence Sharing Protocol
+* Open-Source Threat Intelligence Concepts (OSINT)
+
+
+##  Techniques Learned
+
+* Intelligence Collection and Analysis
+* Threat Actor Profiling
+* IOC Identification and Management
+* TTP Mapping using MITRE ATT&CK
+* Threat Intelligence Sharing and Collaboration
+* Intelligence-Driven Detection and Response
+* Cyber Threat Monitoring and Assessment
+
+
+##  Practical Skills Developed
+
+* Understanding how threat intelligence supports proactive defense.
+* Interpreting intelligence reports and threat indicators.
+* Identifying the relationship between threat actors, malware, infrastructure, and attack techniques.
+* Applying intelligence frameworks to improve detection and response capabilities.
+* Supporting security operations through informed threat analysis.
+
+
+##  Outcome
+
+Completing this room strengthened my understanding of how organizations leverage Cyber Threat Intelligence to anticipate, detect, and
+respond to cyber threats effectively. The knowledge gained provides a strong foundation for advanced studies in Threat Hunting, Incident 
+Response, Malware Analysis, and Security Operations Center (SOC) activities.
+
+### Skills Acquired
+
+`Cyber Threat Intelligence` `Threat Hunting` `Threat Analysis` `MITRE ATT&CK` `STIX/TAXII` `IOC Analysis` `OSINT` `SOC Operations` `Incident Response` `Cyber Defense`
