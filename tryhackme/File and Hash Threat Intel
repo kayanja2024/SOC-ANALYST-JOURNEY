@@ -1,0 +1,202 @@
+# File and Hash Threat Intelligence Analysis
+
+## Project Overview
+
+I Completed the File and Hash Threat Intelligence room on TryHackMe, focusing on the enrichment and investigation of suspicious files and 
+hash artifacts using threat intelligence techniques. The project demonstrates the workflow used by Security Operations Center (SOC) 
+analysts to validate evidence, investigate unknown binaries, identify indicators of compromise (IOCs), and produce actionable intelligence
+reports.
+
+## Objectives
+
+* Validate file and hash artifacts before analysis.
+* Perform static and behavioral analysis of suspicious files.
+* Enrich indicators using threat intelligence sources.
+* Identify malicious behaviors and attack techniques.
+* Generate intelligence reports with evidence-based recommendations.
+
+
+## Topics Covered
+
+### Threat Intelligence Fundamentals
+
+* Threat Intelligence Lifecycle
+* Indicator Enrichment
+* IOC Analysis
+* Cyber Threat Hunting
+* Malware Investigation
+
+### File Analysis
+
+* File Metadata Analysis
+* Filename and Filepath Investigation
+* Static Malware Analysis
+* Binary Validation
+
+### Hash Analysis
+
+* MD5 Hashing
+* SHA1 Hashing
+* SHA256 Hashing
+* Hash Reputation Checking
+* Threat Intelligence Correlation
+
+### Behavioral Analysis
+
+* Process Monitoring
+* Network Activity Observation
+* Persistence Mechanisms
+* Registry Analysis
+* Malware Behavior Identification
+
+### Security Operations Center (SOC)
+
+* Alert Triage
+* Incident Investigation
+* Threat Detection
+* IOC Extraction
+* Incident Reporting
+
+
+## Tools Used
+
+### Threat Intelligence Platforms
+
+* VirusTotal
+* AbuseIPDB
+* AlienVault OTX
+* Hybrid Analysis
+* Any.Run
+
+### Operating System Tools
+
+* Windows File Explorer
+* PowerShell
+* Command Prompt
+
+### File Analysis Tools
+
+* HashMyFiles
+* PEStudio
+* Strings
+* ExifTool
+
+### Behavioral Analysis Tools
+
+* Procmon (Process Monitor)
+* Process Explorer
+* Wireshark
+* TCPView
+
+### Documentation & Reporting
+
+* TryHackMe Lab Environment
+* MITRE ATT&CK Framework
+* GitHub Documentation
+
+
+## Techniques Applied
+
+### Evidence Validation
+
+* Verification of suspicious files before analysis
+* Integrity checking through hash generation
+* Confirmation of file authenticity
+
+### Static Analysis
+
+* Inspection of filenames and filepaths
+* Metadata analysis
+* Hash generation and validation
+* Reputation lookup using threat intelligence databases
+
+### Dynamic Analysis
+
+* Monitoring process execution
+* Observing network connections
+* Tracking persistence activities
+* Capturing runtime behavior
+
+### Threat Intelligence Enrichment
+
+* IOC correlation
+* Threat actor profiling
+* Reputation analysis
+* External intelligence source validation
+
+### Reporting and Documentation
+
+* IOC categorization
+* Threat assessment
+* Behavioral summaries
+* Security recommendations
+
+
+## Key Indicators of Compromise (IOCs)
+
+### File-Based Indicators
+
+* Suspicious filenames
+* Unusual file locations
+* Unknown executables
+
+### Hash-Based Indicators
+
+* MD5 Hashes
+* SHA1 Hashes
+* SHA256 Hashes
+
+### Network Indicators
+
+* Malicious IP Addresses
+* Suspicious Domains
+* Unexpected Network Connections
+
+### Host-Based Indicators
+
+* Registry Modifications
+* Persistence Mechanisms
+* Unauthorized Processes
+
+
+## MITRE ATT&CK Mapping
+
+Relevant techniques identified during analysis include:
+
+* T1055 – Process Injection
+* T1053 – Scheduled Task/Job
+* T1547 – Boot or Logon Autostart Execution
+* T1071 – Application Layer Protocol
+* T1105 – Ingress Tool Transfer
+* T1082 – System Information Discovery
+
+
+## Key Takeaways
+
+* Always validate evidence before beginning analysis.
+* Filepaths and filenames provide valuable context during investigations.
+* Hashes serve as critical pivot points for intelligence enrichment.
+* Behavioral analysis helps confirm malicious intent and uncover hidden activities.
+* Threat intelligence improves detection, investigation, and response capabilities.
+* Effective reporting transforms technical findings into actionable security recommendations.
+
+
+## Skills Demonstrated
+
+* Threat Intelligence Analysis
+* Malware Investigation
+* SOC Operations
+* Static File Analysis
+* Dynamic Malware Analysis
+* Indicator of Compromise (IOC) Analysis
+* Threat Hunting
+* Incident Response
+* Security Reporting
+* MITRE ATT&CK Mapping
+
+
+## Outcome
+
+I Successfully completed the TryHackMe File and Hash Threat Intelligence room and demonstrated the ability to investigate suspicious files,
+enrich threat artifacts using intelligence sources, identify malicious behaviors, extract indicators of compromise, and produce 
+evidence-based security recommendations consistent with SOC analyst workflows.
