@@ -1,0 +1,171 @@
+# Log Analysis with SIEM – TryHackMe
+
+## Project Overview
+
+This repository documents my completion of the **Log Analysis with SIEM** room on TryHackMe. The project focuses on understanding how 
+Security Information and Event Management (SIEM) solutions collect, normalize, correlate, and analyze security logs to detect malicious 
+activities and support incident investigations.
+
+Through hands-on exercises, I gained practical experience using Splunk to investigate security events, identify suspicious behavior, and
+understand the role of SIEM platforms within Security Operations Centers (SOC).
+
+
+## Learning Objectives
+
+* Understand the purpose and value of SIEM solutions.
+* Analyze security logs from multiple data sources.
+* Use Splunk queries to detect malicious activities.
+* Learn the fundamentals of event correlation.
+* Understand log normalization processes.
+* Investigate security incidents using SIEM technologies.
+* Develop foundational SOC analyst skills.
+
+
+## Topics Covered
+
+### Security Information and Event Management (SIEM)
+
+* SIEM Architecture
+* Security Monitoring
+* Event Management
+* Security Analytics
+* Threat Detection
+
+### Log Analysis
+
+* Log Collection
+* Log Aggregation
+* Log Investigation
+* Event Analysis
+* Authentication Log Analysis
+* Security Event Monitoring
+
+### Threat Detection
+
+* Indicators of Compromise (IOCs)
+* Suspicious Activity Detection
+* Alert Investigation
+* Security Incident Analysis
+
+### SOC Operations
+
+* Security Operations Center (SOC)
+* Security Monitoring Workflows
+* Incident Investigation
+* Threat Hunting Fundamentals
+
+### Data Processing
+
+* Log Correlation
+* Log Normalization
+* Event Enrichment
+* Data Parsing
+
+
+## Tools Used
+
+| Tool                      | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| Splunk                    | Security log analysis and threat detection |
+| SIEM Platform             | Event monitoring and investigation         |
+| TryHackMe Lab Environment | Hands-on cybersecurity training            |
+| Security Logs             | Event analysis and investigation           |
+
+
+## Techniques Applied
+
+### Log Analysis Techniques
+
+* Security Event Review
+* Authentication Analysis
+* Log Source Investigation
+* Event Timeline Analysis
+
+### Detection Techniques
+
+* Pattern Recognition
+* Threat Detection
+* Alert Validation
+* Security Event Correlation
+
+### SIEM Techniques
+
+* Search Processing Language (SPL)
+* Log Correlation
+* Event Aggregation
+* Data Normalization
+
+### Investigation Techniques
+
+* Incident Triage
+* Root Cause Analysis
+* Security Event Investigation
+* Threat Identification
+
+
+## Splunk Skills Demonstrated
+
+### Search Queries
+
+* Event Searching
+* Data Filtering
+* Field Extraction
+* Query Optimization
+
+### Security Analysis
+
+* Failed Login Detection
+* Suspicious Authentication Monitoring
+* Security Event Tracking
+* Threat Investigation
+
+### Reporting & Monitoring
+
+* Log Monitoring
+* Event Visualization
+* Security Reporting
+* Alert Analysis
+
+
+## Key Skills Gained
+
+* Security Information and Event Management (SIEM)
+* Splunk Fundamentals
+* Security Log Analysis
+* Threat Detection
+* Event Correlation
+* Log Normalization
+* Incident Investigation
+* Security Monitoring
+* SOC Operations
+* Cyber Threat Analysis
+
+
+## Project Outcomes
+
+✔ Explored the value of SIEM solutions during log analysis.
+
+✔ Learned how Splunk queries can be used to detect malicious behaviors.
+
+✔ Gained practical knowledge of log correlation and normalization.
+
+✔ Improved understanding of security monitoring and threat detection workflows.
+
+✔ Developed foundational SOC Analyst skills through hands-on investigation exercises.
+
+
+## Cybersecurity Domains
+
+* Blue Team Operations
+* Security Operations Center (SOC)
+* Threat Detection and Monitoring
+* Incident Response
+* Cyber Defense
+* Security Analytics
+* Digital Forensics Fundamentals
+
+
+## Portfolio Tags
+
+#CyberSecurity #SIEM #Splunk #SOC #LogAnalysis #ThreatDetection #BlueTeam #IncidentResponse #SecurityMonitoring #TryHackMe #CyberDefense 
+#ThreatHunting #SecurityAnalytics #DigitalForensics
